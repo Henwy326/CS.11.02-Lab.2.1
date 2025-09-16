@@ -20,46 +20,46 @@ public class Main {
     }
 
     // 1. add
-    public static int add(int a, int b){
-        return a + b;
+    public static int add(int number1, int number2){
+        return number1 + number2;
     }
     // 2. add
-    public static int add2(int a, int b, int c, int d){
-        return add(a, b) + add(c,d);
+    public static int add2(int number1, int number2, int number3, int number4){
+        return add(number1, number2) + add(number3, number4);
     }
     // 3. morningGreeting
-    public static String morningGreeting(String a){
-        return "早上好, " + a + "!";
+    public static String morningGreeting(String name){
+        return "早上好, " + name + "!";
     }
     // 4. afternoonGreeting
-    public static String afternoonGreeting(String a){
-        return "下午好," + a + "!";
+    public static String afternoonGreeting(String name){
+        return "下午好," + name + "!";
     }
     // 5. triple
-    public static String triple(String a){
-        return a + "" + a + "" + a + "";
+    public static String triple(String randomLetters){
+        return randomLetters + "" + randomLetters + "" + randomLetters + "";
     }
     // 6. half
-    public static float half(int a){
-        return a / 2;
+    public static float half(int number){
+        return number / 2;
     }
     // 7. roundPositiveValueToNearestInteger
-    public static int roundPositiveValueToNearestInteger(double a){
-        double x = -1 * ((int) a - a);
+    public static int roundPositiveValueToNearestInteger(double number){
+        double x = -1 * ((int) number - number);
         if (x >= 0.5){
-            return (int)a + 1;
+            return (int)number + 1;
         }else if (x < 0.5){
-            return (int)a;
+            return (int)number;
         }
         return -1;
     }
     // 8. roundNegativeValueToNearestInteger
-    public static int roundNegativeValueToNearestInteger(double a){
-        double x = (int) a - a;
+    public static int roundNegativeValueToNearestInteger(double number){
+        double x = (int) number - number;
         if (x >= 0.5){
-            return (int)a - 1;
+            return (int)number - 1;
         }else if (x < 0.5){
-            return (int)a;
+            return (int)number;
         }
         return -1;
     }
