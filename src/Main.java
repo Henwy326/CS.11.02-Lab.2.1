@@ -14,8 +14,8 @@ public class Main {
         String mgreeting = morningGreeting("Toby Fox");
         String agreeting = afternoonGreeting("Toby Fox");
         float halfNumber = half(17);
-        int roundPositive = roundPositiveValueToNearestInteger(8.01);
-        int roundNegative = roundNegativeValueToNearestInteger(-8.5);
+        int roundPositive = roundPositiveValueToNearestInteger(8.5);
+        int roundNegative = roundNegativeValueToNearestInteger(-8.49);
         System.out.println(adding2Numbers + " | " + adding4Numbers + " | " + mgreeting + " | " + agreeting + " | " + halfNumber + " | " + roundPositive + " | " + roundNegative);
     }
 
@@ -48,20 +48,18 @@ public class Main {
         double x = -1 * ((int) number - number);
         if (x >= 0.5){
             return (int)number + 1;
-        }else if (x < 0.5){
+        }else{
             return (int)number;
         }
-        return -1;
     }
     // 8. roundNegativeValueToNearestInteger
     public static int roundNegativeValueToNearestInteger(double number){
         double x = (int) number - number;
         if (x >= 0.5){
             return (int)number - 1;
-        }else if (x < 0.5){
+        }else {
             return (int)number;
         }
-        return -1;
     }
 
 }
