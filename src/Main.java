@@ -10,12 +10,12 @@ public class Main {
 
     public static void main(String[] args) {
         int adding2Numbers = add(2, 3);
-        int adding4Numbers = add2(1, 2, 3, 4);
+        int adding4Numbers = add(1, 2, 3, 4);
         String mgreeting = morningGreeting("Toby Fox");
         String agreeting = afternoonGreeting("Toby Fox");
-        float halfNumber = half(17);
+        double halfNumber = half(17);
         int roundPositive = roundPositiveValueToNearestInteger(8.5);
-        int roundNegative = roundNegativeValueToNearestInteger(-8.49);
+        int roundNegative = roundNegativeValueToNearestInteger(-8.5);
         System.out.println(adding2Numbers + " | " + adding4Numbers + " | " + mgreeting + " | " + agreeting + " | " + halfNumber + " | " + roundPositive + " | " + roundNegative);
     }
 
@@ -24,7 +24,7 @@ public class Main {
         return number1 + number2;
     }
     // 2. add
-    public static int add2(int number1, int number2, int number3, int number4){
+    public static int add(int number1, int number2, int number3, int number4){
         return add(number1, number2) + add(number3, number4);
     }
     // 3. morningGreeting
@@ -33,15 +33,15 @@ public class Main {
     }
     // 4. afternoonGreeting
     public static String afternoonGreeting(String name){
-        return "下午好," + name + "!";
+        return "下午好, " + name + "!";
     }
     // 5. triple
     public static String triple(String randomLetters){
         return randomLetters + "" + randomLetters + "" + randomLetters + "";
     }
     // 6. half
-    public static float half(int number){
-        return number / 2;
+    public static double half(int number){
+        return (double) number / 2;
     }
     // 7. roundPositiveValueToNearestInteger
     public static int roundPositiveValueToNearestInteger(double number){
